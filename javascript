@@ -1,8 +1,6 @@
-Dia uno en javascript;
+Dia uno en javascript 
 
-AH = 56
-HG = 32
-LU = AH + HG
-
-console.info(LU)
-  
+console.debug()	Muestra información con todo nivel de detalle.
+console.info()	Muestra mensajes de información.
+console.warn()	Muestra información de advertencia. Aparece destacado en amarillo.
+console.error()	Muestra información de error. Aparece destacado en rojo.
