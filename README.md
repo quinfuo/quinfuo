@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @quinfuo
 - 👀 I’m interested in learn programming, starting with python and javascript
-- 🌱 I’m currently learning Python basics
+- 🌱 I’m currently learning Javascript basics
 - 📫 How to reach me: @quinfuo on instagram
 - 😄 Pronouns: He/Him
 - ⚡ Fun fact: Im horrible at maths, but i like maths :) 
