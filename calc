@@ -1,0 +1,40 @@
+// Importar el módulo readline
+const readline = require('readline');
+
+// Crear una interfaz para leer la entrada y escribir la salida
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+// Función para realizar cálculos
+function realizarCalculos(num1, num2) {
+    const suma = num1 + num2;
+    const resta = num1 - num2;
+    const multiplicacion = num1 * num2;
+    const division = num1 / num2;
+
+    console.log(`Suma: ${suma}`);
+    console.log(`Resta: ${resta}`);
+    console.log(`Multiplicación: ${multiplicacion}`);
+
+// Solicitar datos al usuario
+    rl.question('Introduce el primer número: ', (num1) => {
+        rl.question('Introduce el segundo número: ', (num2) => {
+            // Convertir los datos a números
+            const numero1 = parseFloat(num1);
+            const numero2 = parseFloat(num2);
+
+            // Verificar si los datos son números válidos
+            if (isNaN(numero1) || isNaN(numero2)) {
+                console.log('Por favor, introduce números válidos.');
+            } else {
+                // Realizar los cálculos
+                realizarCalculos(numero1, numero2);
+            }
+
+            // Cerrar la interfaz readline
+            rl.close();
+        });
+    });    console.log(`División: ${division}`);
+}
